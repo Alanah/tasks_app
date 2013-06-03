@@ -26,11 +26,16 @@ group :test, :development do
 	gem 'turn', '< 0.8.3'
 	gem 'rspec-rails', '2.13.0'
 	gem 'capybara'
-	gem 'guard-rspec'	
+	gem 'guard-rspec'
+	gem 'launchy'	
+	gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 	#gem 'growl_notify'
 end	
 
 gem 'execjs', '1.2.4'
+
+
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
